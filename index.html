@@ -10,15 +10,30 @@
         <title>Hacker News</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
-        <h1>Hello World</h1>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="app.js" async defer></script>
+        <div id="app-container">
+            <div id="app-header">
+                <header class="header">
+                    <div class="flex">
+                        <span class="header-title">
+                            <i class="fa-brands fa-y-combinator header-logo"></i>
+                            HackerNews
+                        </span>
+                        <a href="#/" class="header-link">Top</a>
+                        <a href="#/new" class="header-link">New</a>
+                        <a href="#/ask" class="header-link">Ask</a>
+                        <a href="#/show" class="header-link">Show</a>
+                        <a href="#/favorites" class="header-link">Favorites</a>
+                    </div>
+                </header>
+            </div>
+            <div id="route-container">
+                <div id="router-outlet"></div>
+            </div>
+        </div>
+        <script src="app.js" type="module" async defer></script>
     </body>
 </html>
