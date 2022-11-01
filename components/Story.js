@@ -15,7 +15,7 @@ export default function Story(story){
                     |
                     <span class="favorite" data-story='${JSON.stringify(story)}'>
                         ${story.isFavorite ? `<i class="fa-solid fa-star"></i>` : `<i class="fa-regular fa-star"></i>`}
-                        ${story.isFavorite ? "remove from favorites" : "add to favorites"}
+                        ${story.isFavorite ? "Remove from favorites" : "Add to favorites"}
                     </span>
                 </div>
             </div>
