@@ -1,5 +1,4 @@
 import RouterHandler from "./router.js"
-import './store.js'
 window.onhashchange = () => {
     setActiveLink()
 }
